@@ -1,1 +1,1 @@
-Sitemap: https://der0pa.github.io/ML/sitemap.xml
+Sitemap: https://der0pa.github.io/Machine-Learning/sitemap.xml
