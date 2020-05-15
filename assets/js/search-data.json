@@ -1,13 +1,22 @@
 {
   
     
-  
-    
-        "post1": {
+        "post0": {
             "title": "Title",
             "content": "!python3 --version . Python 3.6.9 . !python --version . Python 2.7.17 . !python -c &#39;import numpy; print(numpy.__version__)&#39; . 1.13.3 . import matplotlib print(matplotlib.__version__) . 3.2.1 . !python3 cuda_check.py . Found 1 device(s). Device: 0 Name: NVIDIA Tegra X1 Compute Capability: 5.3 Multiprocessors: 1 CUDA Cores: 128 Concurrent threads: 2048 GPU clock: 921.6 MHz Memory clock: 12.75 MHz Total Memory: 3964 MiB Free Memory: 1033 MiB . !ls -la . total 24 drwxrwxr-x 3 opa opa 4096 May 13 21:44 . drwxr-xr-x 22 opa opa 4096 May 13 21:36 .. -rw-rw-r-- 1 opa opa 5439 May 13 21:43 cuda_check.py -rw-rw-r-- 1 opa opa 2150 May 13 21:44 &#39;getting started jetson-nano.ipynb&#39; drwxrwxr-x 2 opa opa 4096 May 13 16:55 .ipynb_checkpoints .",
-            "url": "https://der0pa.github.io/Machine-Learning/Machine-Learning/2020/05/13/getting-started-jetson-nano.html",
-            "relUrl": "/2020/05/13/getting-started-jetson-nano.html",
+            "url": "https://der0pa.github.io/Machine-Learning/Machine-Learning/2020/05/14/getting-started-jetson-nano.html",
+            "relUrl": "/2020/05/14/getting-started-jetson-nano.html",
+            "date": " • May 14, 2020"
+        }
+        
+    
+  
+    
+        ,"post1": {
+            "title": "Title",
+            "content": "# &quot;nvidia jetson nano&quot; &gt; &quot;setting up nano&quot; - toc: false - branch: master - badges: true - comments: true - categories: [jetson-nano, fastpages, jupyter] - image: images/some_folder/your_image.png - hide: false - search_exclude: true - metadata_key1: metadata_value1 - metadata_key2: metadata_value2 !uname -r . 4.9.140-tegra . !python3 cuda_check.py . Found 1 device(s). Device: 0 Name: NVIDIA Tegra X1 Compute Capability: 5.3 Multiprocessors: 1 CUDA Cores: 128 Concurrent threads: 2048 GPU clock: 921.6 MHz Memory clock: 12.75 MHz Total Memory: 3964 MiB Free Memory: 1331 MiB . !python3 --version . Python 3.6.9 . !python --version . Python 2.7.17 . !python -c &#39;import numpy; print(numpy.__version__)&#39; . 1.13.3 . import matplotlib print(matplotlib.__version__) . 3.2.1 . import cv2 print(cv2.__version__) . 4.1.1 . import torch print(torch.__version__) . 1.5.0 . # -*- coding: utf-8 -*- import torch dtype = torch.float device = torch.device(&quot;cpu&quot;) # device = torch.device(&quot;cuda:0&quot;) # Uncomment this to run on GPU # N is batch size; D_in is input dimension; # H is hidden dimension; D_out is output dimension. N, D_in, H, D_out = 64, 1000, 100, 10 # Create random input and output data x = torch.randn(N, D_in, device=device, dtype=dtype) y = torch.randn(N, D_out, device=device, dtype=dtype) # Randomly initialize weights w1 = torch.randn(D_in, H, device=device, dtype=dtype) w2 = torch.randn(H, D_out, device=device, dtype=dtype) learning_rate = 1e-6 for t in range(500): # Forward pass: compute predicted y h = x.mm(w1) h_relu = h.clamp(min=0) y_pred = h_relu.mm(w2) # Compute and print loss loss = (y_pred - y).pow(2).sum().item() if t % 100 == 99: print(t, loss) # Backprop to compute gradients of w1 and w2 with respect to loss grad_y_pred = 2.0 * (y_pred - y) grad_w2 = h_relu.t().mm(grad_y_pred) grad_h_relu = grad_y_pred.mm(w2.t()) grad_h = grad_h_relu.clone() grad_h[h &lt; 0] = 0 grad_w1 = x.t().mm(grad_h) # Update weights using gradient descent w1 -= learning_rate * grad_w1 w2 -= learning_rate * grad_w2 . 99 661.8316650390625 199 4.653375148773193 299 0.04816683754324913 399 0.0008839804213494062 499 9.634429443394765e-05 .",
+            "url": "https://der0pa.github.io/Machine-Learning/Machine-Learning/2020/05/13/nvidia-jetson-nano.html",
+            "relUrl": "/2020/05/13/nvidia-jetson-nano.html",
             "date": " • May 13, 2020"
         }
         
