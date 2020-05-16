@@ -1,9 +1,18 @@
 {
   
     
+        "post0": {
+            "title": "Title",
+            "content": "# &quot;nvidia jetson nano part II&quot; &gt; &quot;setting up pytorch and opencv&quot; - toc: false - branch: master - badges: true - comments: true - categories: [jetson-nano, fastpages, jupyter] - image: images/lena.jpg - hide: false - search_exclude: true - metadata_key1: metadata_value1 - metadata_key2: metadata_value2",
+            "url": "https://der0pa.github.io/Machine-Learning/Machine-Learning/2020/05/16/week2withJetsonNano.html",
+            "relUrl": "/2020/05/16/week2withJetsonNano.html",
+            "date": " • May 16, 2020"
+        }
+        
+    
   
     
-        "post1": {
+        ,"post1": {
             "title": "Title",
             "content": "!python3 --version . Python 3.6.9 . !python --version . Python 2.7.17 . !python -c &#39;import numpy; print(numpy.__version__)&#39; . 1.13.3 . import matplotlib print(matplotlib.__version__) . 3.2.1 . !python3 cuda_check.py . Found 1 device(s). Device: 0 Name: NVIDIA Tegra X1 Compute Capability: 5.3 Multiprocessors: 1 CUDA Cores: 128 Concurrent threads: 2048 GPU clock: 921.6 MHz Memory clock: 12.75 MHz Total Memory: 3964 MiB Free Memory: 324 MiB . !ls -la . total 120 drwxrwxr-x 4 opa opa 4096 May 15 16:46 . drwxrwxr-x 16 opa opa 4096 May 13 22:47 .. -rw-rw-r-- 1 opa opa 30573 May 13 22:47 2020-02-20-test.ipynb -rw-rw-r-- 1 opa opa 6751 May 13 22:47 2020-05-05-firstnotebook.ipynb -rw-rw-r-- 1 opa opa 1060 May 13 23:11 2020-05-06-notebook_TWO.ipynb -rw-rw-r-- 1 opa opa 43656 May 15 16:46 2020-05-13-nvidia-jetson-nano.ipynb -rw-rw-r-- 1 opa opa 5439 May 13 21:43 cuda_check.py -rw-rw-r-- 1 opa opa 2785 May 13 22:48 &#39;getting started jetson-nano.ipynb&#39; drwxrwxr-x 2 opa opa 4096 May 15 14:11 .ipynb_checkpoints drwxrwxr-x 2 opa opa 4096 May 13 22:47 my_icons -rw-rw-r-- 1 opa opa 771 May 13 22:47 README.md .",
             "url": "https://der0pa.github.io/Machine-Learning/Machine-Learning/2020/05/16/getting-started-jetson-nano.html",
