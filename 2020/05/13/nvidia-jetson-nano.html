@@ -3,34 +3,34 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>My First Neural Network, Part 1 | der0pa’s ML blog</title>
+<title>nvidia jetson nano part I | der0pa’s ML blog</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="My First Neural Network, Part 1" />
+<meta property="og:title" content="nvidia jetson nano part I" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Jupyter Notebooks/Blog" />
-<meta property="og:description" content="Jupyter Notebooks/Blog" />
+<meta name="description" content="setting up pytorch and opencv" />
+<meta property="og:description" content="setting up pytorch and opencv" />
 <link rel="canonical" href="https://der0pa.github.io/Machine-Learning/Machine-Learning/2020/05/13/nvidia-jetson-nano.html" />
 <meta property="og:url" content="https://der0pa.github.io/Machine-Learning/Machine-Learning/2020/05/13/nvidia-jetson-nano.html" />
 <meta property="og:site_name" content="der0pa’s ML blog" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-05-13T00:00:00-05:00" />
 <script type="application/ld+json">
-{"description":"Jupyter Notebooks/Blog","@type":"BlogPosting","headline":"My First Neural Network, Part 1","dateModified":"2020-05-13T00:00:00-05:00","datePublished":"2020-05-13T00:00:00-05:00","url":"https://der0pa.github.io/Machine-Learning/Machine-Learning/2020/05/13/nvidia-jetson-nano.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://der0pa.github.io/Machine-Learning/Machine-Learning/2020/05/13/nvidia-jetson-nano.html"},"@context":"https://schema.org"}</script>
+{"description":"setting up pytorch and opencv","@type":"BlogPosting","headline":"nvidia jetson nano part I","dateModified":"2020-05-13T00:00:00-05:00","datePublished":"2020-05-13T00:00:00-05:00","url":"https://der0pa.github.io/Machine-Learning/Machine-Learning/2020/05/13/nvidia-jetson-nano.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://der0pa.github.io/Machine-Learning/Machine-Learning/2020/05/13/nvidia-jetson-nano.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/Machine-Learning/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://der0pa.github.io/Machine-Learning/Machine-Learning/feed.xml" title="der0pa's ML blog" /><link rel="shortcut icon" type="image/x-icon" href="/Machine-Learning/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>My First Neural Network, Part 1 | der0pa’s ML blog</title>
+<title>nvidia jetson nano part I | der0pa’s ML blog</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="My First Neural Network, Part 1" />
+<meta property="og:title" content="nvidia jetson nano part I" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Jupyter Notebooks/Blog" />
-<meta property="og:description" content="Jupyter Notebooks/Blog" />
+<meta name="description" content="setting up pytorch and opencv" />
+<meta property="og:description" content="setting up pytorch and opencv" />
 <link rel="canonical" href="https://der0pa.github.io/Machine-Learning/Machine-Learning/2020/05/13/nvidia-jetson-nano.html" />
 <meta property="og:url" content="https://der0pa.github.io/Machine-Learning/Machine-Learning/2020/05/13/nvidia-jetson-nano.html" />
 <meta property="og:site_name" content="der0pa’s ML blog" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-05-13T00:00:00-05:00" />
 <script type="application/ld+json">
-{"description":"Jupyter Notebooks/Blog","@type":"BlogPosting","headline":"My First Neural Network, Part 1","dateModified":"2020-05-13T00:00:00-05:00","datePublished":"2020-05-13T00:00:00-05:00","url":"https://der0pa.github.io/Machine-Learning/Machine-Learning/2020/05/13/nvidia-jetson-nano.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://der0pa.github.io/Machine-Learning/Machine-Learning/2020/05/13/nvidia-jetson-nano.html"},"@context":"https://schema.org"}</script>
+{"description":"setting up pytorch and opencv","@type":"BlogPosting","headline":"nvidia jetson nano part I","dateModified":"2020-05-13T00:00:00-05:00","datePublished":"2020-05-13T00:00:00-05:00","url":"https://der0pa.github.io/Machine-Learning/Machine-Learning/2020/05/13/nvidia-jetson-nano.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://der0pa.github.io/Machine-Learning/Machine-Learning/2020/05/13/nvidia-jetson-nano.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -102,13 +102,13 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">My First Neural Network, Part 1</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-05-13T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">nvidia jetson nano part I</h1><p class="page-description">setting up pytorch and opencv</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-05-13T00:00:00-05:00" itemprop="datePublished">
         May 13, 2020
       </time>
        • <span class="read-time" title="Estimated read time">
     
     
-      36 min read
+      40 min read
     
 </span></p>
 
@@ -154,26 +154,583 @@ window.onload = wrap_img;
 
 </div>
     
+##  nvidia jetson-nano setup , Part 1
+by [der0pa](https://github.com/der0pa) 
+https://der0pa.github.io/Machine-Learning
+<a href="https://der0pa.github.io/Machine-Learning"><img src="https://avatars3.githubusercontent.com/u/2074980?s=400&amp;u=f6a82d6d2bb539b0c0d111c5e3bd77cbad020509&amp;v=4" height="12px" /></a>
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="nvidia-jetson-nano-part-I">nvidia jetson nano part I<a class="anchor-link" href="#nvidia-jetson-nano-part-I"> </a></h1><blockquote><p>setting up pytorch and opencv</p>
-</blockquote>
-<ul>
-<li>toc:false- branch: master</li>
-<li>badges: true</li>
-<li>comments: true</li>
-<li>categories: [jetson-nano, fastpages, jupyter]</li>
-<li>image: images/some_folder/your_image.png</li>
-<li>hide: false</li>
-<li>search_exclude: true</li>
-<li>metadata_key1: metadata_value1</li>
-<li>metadata_key2: metadata_value2</li>
-</ul>
+May 17, 2020
+
+Links to lessons:
+[Part 0](https://drscotthawley.github.io/Following-Gravity/),
+[Part 1](https://colab.research.google.com/drive/1CPueDKDYOC33U_0qHxBhsDPpzYMpD8c8), 
+[Part 2](https://colab.research.google.com/drive/1O9xcdAQUxo7KdVhbggqLCvabc77Rj-yH)
+[Part 3](https://colab.research.google.com/drive/1UZDEK-3v-SWxpDYBfamBoD4xhy7H2DEZ#scrollTo=14tOCcvT_a0I)
+
+
+toc: false
+  branch: master
+  badges: true
+  comments: true
+  categories: [jetson-nano, fastpages, jupyter]
+  image: images/some_folder/your_image.png
+  hide: false
+  search_exclude: true
+  metadata_key1: metadata_value1
+  metadata_key2: metadata_value2
+
+*Note: To execute anything in this notebook and the ones following, you need to first save your own copy to Google Drive.*
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># let us run this cell only if CUDA is available</span>
+<span class="c1"># We will use ``torch.device`` objects to move tensors in and out of GPU</span>
+<span class="k">if</span> <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">is_available</span><span class="p">():</span>
+    <span class="n">device</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">device</span><span class="p">(</span><span class="s2">&quot;cuda&quot;</span><span class="p">)</span>          <span class="c1"># a CUDA device object</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">ones_like</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">device</span><span class="o">=</span><span class="n">device</span><span class="p">)</span>  <span class="c1"># directly create a tensor on GPU</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>                       <span class="c1"># or just use strings ``.to(&quot;cuda&quot;)``</span>
+    <span class="n">z</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">z</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="s2">&quot;cpu&quot;</span><span class="p">,</span> <span class="n">torch</span><span class="o">.</span><span class="n">double</span><span class="p">))</span>       <span class="c1"># ``.to`` can also change dtype together!</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>tensor([0.2658], device=&#39;cuda:0&#39;)
+tensor([0.2658], dtype=torch.float64)
+</pre>
+</div>
+</div>
 
 </div>
 </div>
+
 </div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">torchvision</span>
+<span class="n">torchvision</span><span class="o">.</span><span class="n">__version__</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;0.2.2&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
+<span class="kn">import</span> <span class="nn">torch</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Construct a 5x3 matrix, uninitialized:</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">empty</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>tensor([[3.7566e+21, 0.0000e+00, 0.0000e+00],
+        [0.0000e+00, 0.0000e+00, 0.0000e+00],
+        [2.0122e-15, 1.7796e-43, 0.0000e+00],
+        [0.0000e+00, 1.9498e-15, 1.7796e-43],
+        [0.0000e+00, 0.0000e+00,        nan]])
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># construct a randomly initialzed matrix:</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>tensor([[0.9025, 0.3065, 0.9887],
+        [0.5111, 0.5895, 0.1365],
+        [0.1675, 0.3019, 0.9025],
+        [0.0654, 0.4116, 0.7389],
+        [0.5631, 0.2037, 0.1457]])
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Construct a matrix filled zeros and of dtype long:</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">long</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>tensor([[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0]])
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Construct a tensor directly from data:</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">([</span><span class="mf">5.5</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>tensor([5.5000, 3.0000])
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># or create a tensor based on an existing tensor. </span>
+<span class="c1"># These methods will reuse properties of the input tensor, e.g. dtype,</span>
+<span class="c1"># unless new values are provided by user</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">new_zeros</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">double</span><span class="p">)</span>      <span class="c1"># new_* methods take in sizes</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randn_like</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">float</span><span class="p">)</span>    <span class="c1"># override dtype!</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>                                      <span class="c1"># result has the same size</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">size</span><span class="p">())</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>tensor([[0., 0., 0.],
+        [0., 0., 0.],
+        [0., 0., 0.],
+        [0., 0., 0.],
+        [0., 0., 0.]], dtype=torch.float64)
+tensor([[ 1.3566, -1.4789, -0.7570],
+        [-1.1449, -0.2322, -1.4030],
+        [-1.1682, -1.4896, -0.4741],
+        [ 1.1031,  1.1265, -1.1917],
+        [-0.1694, -0.3821,  0.1444]])
+torch.Size([5, 3])
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>tensor([[ 2.3400, -1.1397, -0.5097],
+        [-0.3986,  0.3333, -0.8365],
+        [-0.9260, -1.3966,  0.1837],
+        [ 1.2826,  2.0173, -0.7995],
+        [ 0.1357,  0.1972,  0.4860]])
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># same as above</span>
+<span class="c1"># sugared </span>
+<span class="nb">print</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>tensor([[ 2.3400, -1.1397, -0.5097],
+        [-0.3986,  0.3333, -0.8365],
+        [-0.9260, -1.3966,  0.1837],
+        [ 1.2826,  2.0173, -0.7995],
+        [ 0.1357,  0.1972,  0.4860]])
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>tensor([-1.4789, -0.2322, -1.4896,  1.1265, -0.3821])
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Resizing: If you want to resize/reshape tensor, </span>
+<span class="c1"># you can use torch.view:</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="mi">16</span><span class="p">)</span>
+<span class="n">z</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span>  <span class="c1"># the size -1 is inferred from other dimensions</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">size</span><span class="p">(),</span> <span class="n">y</span><span class="o">.</span><span class="n">size</span><span class="p">(),</span> <span class="n">z</span><span class="o">.</span><span class="n">size</span><span class="p">())</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>torch.Size([4, 4]) torch.Size([16]) torch.Size([2, 8])
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># If you have a one element tensor, use .item() to get the value as a</span>
+<span class="c1"># Python number</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">item</span><span class="p">())</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a= &quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;y= &quot;</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;b= &quot;</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>tensor([-0.7342])
+-0.7341695427894592
+a=  tensor([1., 1., 1., 1., 1.])
+y=  tensor([ 0.8264,  0.8474,  0.1451, -0.2517, -0.5211,  0.9682,  0.6880,  0.6404,
+         0.8981, -0.8830,  0.9373, -0.7619, -0.9947, -0.0632, -0.8615, -1.7986])
+b=  [ 1.  1.  1.  1.  1.]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># See how the numpy array changed in value</span>
+<span class="n">a</span><span class="o">.</span><span class="n">add_</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>tensor([5., 5., 5., 5., 5.])
+[ 5.  5.  5.  5.  5.]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">from_numpy</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="n">np</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="n">a</span><span class="p">)</span>
+<span class="n">a</span> 
+<span class="n">b</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>tensor([2., 2., 2., 2., 2.], dtype=torch.float64)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -185,6 +742,20 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>4.9.140-tegra
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -205,6 +776,30 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Found 1 device(s).
+Device: 0
+  Name: NVIDIA Tegra X1
+  Compute Capability: 5.3
+  Multiprocessors: 1
+  CUDA Cores: 128
+  Concurrent threads: 2048
+  GPU clock: 921.6 MHz
+  Memory clock: 12.75 MHz
+  Total Memory: 3956 MiB
+  Free Memory: 661 MiB
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -219,6 +814,20 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Python 3.6.9
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -239,6 +848,20 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Python 2.7.17
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -253,6 +876,20 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1.13.3
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -274,6 +911,20 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>3.2.1
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -289,6 +940,20 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>4.3.0
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -310,11 +975,26 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1.5.0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>code is from pytorch tutorials at: <a href="https://pytorch.org/tutorials/">https://pytorch.org/tutorials/</a></p>
 <p>The sample <code>code</code> below manually implements the forward and backward passes</p>
 
 </div>
@@ -374,6 +1054,24 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>99 1027.5076904296875
+199 10.807744979858398
+299 0.19996334612369537
+399 0.004566734656691551
+499 0.00029197396361269057
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -1318,6 +2016,20 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>GNOME Image Viewer 3.28.1
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
