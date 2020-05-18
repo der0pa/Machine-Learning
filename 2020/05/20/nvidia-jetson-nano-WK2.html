@@ -3,34 +3,34 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>nvidia jetson nano part I | der0pa’s ML blog</title>
+<title>Title | der0pa’s ML blog</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="nvidia jetson nano part I" />
+<meta property="og:title" content="Title" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="setting up pytorch and opencv" />
-<meta property="og:description" content="setting up pytorch and opencv" />
-<link rel="canonical" href="https://der0pa.github.io/Machine-Learning/Machine-Learning/2020/05/13/nvidia-jetson-nano.html" />
-<meta property="og:url" content="https://der0pa.github.io/Machine-Learning/Machine-Learning/2020/05/13/nvidia-jetson-nano.html" />
+<meta name="description" content="Jupyter Notebooks/Blog" />
+<meta property="og:description" content="Jupyter Notebooks/Blog" />
+<link rel="canonical" href="https://der0pa.github.io/Machine-Learning/Machine-Learning/2020/05/20/nvidia-jetson-nano-WK2.html" />
+<meta property="og:url" content="https://der0pa.github.io/Machine-Learning/Machine-Learning/2020/05/20/nvidia-jetson-nano-WK2.html" />
 <meta property="og:site_name" content="der0pa’s ML blog" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-05-13T00:00:00-05:00" />
+<meta property="article:published_time" content="2020-05-20T00:00:00-05:00" />
 <script type="application/ld+json">
-{"description":"setting up pytorch and opencv","@type":"BlogPosting","headline":"nvidia jetson nano part I","dateModified":"2020-05-13T00:00:00-05:00","datePublished":"2020-05-13T00:00:00-05:00","url":"https://der0pa.github.io/Machine-Learning/Machine-Learning/2020/05/13/nvidia-jetson-nano.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://der0pa.github.io/Machine-Learning/Machine-Learning/2020/05/13/nvidia-jetson-nano.html"},"@context":"https://schema.org"}</script>
+{"description":"Jupyter Notebooks/Blog","@type":"BlogPosting","headline":"Title","dateModified":"2020-05-20T00:00:00-05:00","datePublished":"2020-05-20T00:00:00-05:00","url":"https://der0pa.github.io/Machine-Learning/Machine-Learning/2020/05/20/nvidia-jetson-nano-WK2.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://der0pa.github.io/Machine-Learning/Machine-Learning/2020/05/20/nvidia-jetson-nano-WK2.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/Machine-Learning/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://der0pa.github.io/Machine-Learning/Machine-Learning/feed.xml" title="der0pa's ML blog" /><link rel="shortcut icon" type="image/x-icon" href="/Machine-Learning/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>nvidia jetson nano part I | der0pa’s ML blog</title>
+<title>Title | der0pa’s ML blog</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="nvidia jetson nano part I" />
+<meta property="og:title" content="Title" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="setting up pytorch and opencv" />
-<meta property="og:description" content="setting up pytorch and opencv" />
-<link rel="canonical" href="https://der0pa.github.io/Machine-Learning/Machine-Learning/2020/05/13/nvidia-jetson-nano.html" />
-<meta property="og:url" content="https://der0pa.github.io/Machine-Learning/Machine-Learning/2020/05/13/nvidia-jetson-nano.html" />
+<meta name="description" content="Jupyter Notebooks/Blog" />
+<meta property="og:description" content="Jupyter Notebooks/Blog" />
+<link rel="canonical" href="https://der0pa.github.io/Machine-Learning/Machine-Learning/2020/05/20/nvidia-jetson-nano-WK2.html" />
+<meta property="og:url" content="https://der0pa.github.io/Machine-Learning/Machine-Learning/2020/05/20/nvidia-jetson-nano-WK2.html" />
 <meta property="og:site_name" content="der0pa’s ML blog" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-05-13T00:00:00-05:00" />
+<meta property="article:published_time" content="2020-05-20T00:00:00-05:00" />
 <script type="application/ld+json">
-{"description":"setting up pytorch and opencv","@type":"BlogPosting","headline":"nvidia jetson nano part I","dateModified":"2020-05-13T00:00:00-05:00","datePublished":"2020-05-13T00:00:00-05:00","url":"https://der0pa.github.io/Machine-Learning/Machine-Learning/2020/05/13/nvidia-jetson-nano.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://der0pa.github.io/Machine-Learning/Machine-Learning/2020/05/13/nvidia-jetson-nano.html"},"@context":"https://schema.org"}</script>
+{"description":"Jupyter Notebooks/Blog","@type":"BlogPosting","headline":"Title","dateModified":"2020-05-20T00:00:00-05:00","datePublished":"2020-05-20T00:00:00-05:00","url":"https://der0pa.github.io/Machine-Learning/Machine-Learning/2020/05/20/nvidia-jetson-nano-WK2.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://der0pa.github.io/Machine-Learning/Machine-Learning/2020/05/20/nvidia-jetson-nano-WK2.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -102,13 +102,13 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">nvidia jetson nano part I</h1><p class="page-description">setting up pytorch and opencv</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-05-13T00:00:00-05:00" itemprop="datePublished">
-        May 13, 2020
+    <h1 class="post-title p-name" itemprop="name headline">Title</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-05-20T00:00:00-05:00" itemprop="datePublished">
+        May 20, 2020
       </time>
        • <span class="read-time" title="Estimated read time">
     
     
-      40 min read
+      39 min read
     
 </span></p>
 
@@ -119,19 +119,19 @@ window.onload = wrap_img;
         <div class="pb-5 d-flex flex-wrap flex-justify-end">
           <div class="px-2">
 
-    <a href="https://github.com/der0pa/Machine-Learning/tree/master/_notebooks/2020-05-13-nvidia-jetson-nano.ipynb" role="button" target="_blank">
+    <a href="https://github.com/der0pa/Machine-Learning/tree/master/_notebooks/2020-05-20-nvidia-jetson-nano-WK2.ipynb" role="button" target="_blank">
 <img class="notebook-badge-image" src="/Machine-Learning/assets/badges/github.svg" alt="View On GitHub">
     </a>
 </div>
 
           <div class="px-2">
-    <a href="https://mybinder.org/v2/gh/der0pa/Machine-Learning/master?filepath=_notebooks%2F2020-05-13-nvidia-jetson-nano.ipynb" target="_blank">
+    <a href="https://mybinder.org/v2/gh/der0pa/Machine-Learning/master?filepath=_notebooks%2F2020-05-20-nvidia-jetson-nano-WK2.ipynb" target="_blank">
         <img class="notebook-badge-image" src="/Machine-Learning/assets/badges/binder.svg" alt="Open In Binder"/>
     </a>
 </div>
 
           <div class="px-2">
-    <a href="https://colab.research.google.com/github/der0pa/Machine-Learning/blob/master/_notebooks/2020-05-13-nvidia-jetson-nano.ipynb" target="_blank">
+    <a href="https://colab.research.google.com/github/der0pa/Machine-Learning/blob/master/_notebooks/2020-05-20-nvidia-jetson-nano-WK2.ipynb" target="_blank">
         <img class="notebook-badge-image" src="/Machine-Learning/assets/badges/colab.svg" alt="Open In Colab"/>
     </a>
 </div>
@@ -143,7 +143,7 @@ window.onload = wrap_img;
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
 #################################################
-# file to edit: _notebooks/2020-05-13-nvidia-jetson-nano.ipynb
+# file to edit: _notebooks/2020-05-20-nvidia-jetson-nano-WK2.ipynb
 -->
 
 <div class="container" id="notebook-container">
@@ -154,32 +154,272 @@ window.onload = wrap_img;
 
 </div>
     
-##  nvidia jetson-nano setup , Part 1
-by [der0pa](https://github.com/der0pa) 
-https://der0pa.github.io/Machine-Learning
-<a href="https://der0pa.github.io/Machine-Learning"><img src="https://avatars3.githubusercontent.com/u/2074980?s=400&amp;u=f6a82d6d2bb539b0c0d111c5e3bd77cbad020509&amp;v=4" height="12px" /></a>
 
-May 17, 2020
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="nvidia-jetson-nano-setup-,-Part-2">nvidia jetson-nano setup , Part 2<a class="anchor-link" href="#nvidia-jetson-nano-setup-,-Part-2"> </a></h2><p>by <a href="https://github.com/der0pa">der0pa</a> 
+<a href="https://der0pa.github.io/Machine-Learning">https://der0pa.github.io/Machine-Learning</a>
+<a href="https://der0pa.github.io/Machine-Learning"><img src="https://avatars3.githubusercontent.com/u/2074980?s=400&amp;u=f6a82d6d2bb539b0c0d111c5e3bd77cbad020509&amp;v=4" height="12px" /></a></p>
+<p>May 20, 2020</p>
+<p>Links to lessons:
+<a href="https://drscotthawley.github.io/Following-Gravity/">Part 0</a>,
+<a href="https://colab.research.google.com/drive/1CPueDKDYOC33U_0qHxBhsDPpzYMpD8c8">Part 1</a>, 
+<a href="https://colab.research.google.com/drive/1O9xcdAQUxo7KdVhbggqLCvabc77Rj-yH">Part 2</a>
+<a href="https://colab.research.google.com/drive/1UZDEK-3v-SWxpDYBfamBoD4xhy7H2DEZ#scrollTo=14tOCcvT_a0I">Part 3</a></p>
+<p><em>Note: To execute anything in this notebook and the ones following,    you need to first save your own copy to Google Drive.</em></p>
+<ul>
+<li>toc:true- branch: master- badges: true- comments: true</li>
+<li>author: Hamel Husain &amp; Jeremy Howard</li>
+<li>categories: [fastpages, jupyter]</li>
+</ul>
 
-Links to lessons:
-[Part 0](https://drscotthawley.github.io/Following-Gravity/),
-[Part 1](https://colab.research.google.com/drive/1CPueDKDYOC33U_0qHxBhsDPpzYMpD8c8), 
-[Part 2](https://colab.research.google.com/drive/1O9xcdAQUxo7KdVhbggqLCvabc77Rj-yH)
-[Part 3](https://colab.research.google.com/drive/1UZDEK-3v-SWxpDYBfamBoD4xhy7H2DEZ#scrollTo=14tOCcvT_a0I)
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">torch</span>
+<span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">is_available</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
 
 
-toc: false
-  branch: master
-  badges: true
-  comments: true
-  categories: [jetson-nano, fastpages, jupyter]
-  image: images/some_folder/your_image.png
-  hide: false
-  search_exclude: true
-  metadata_key1: metadata_value1
-  metadata_key2: metadata_value2
 
-*Note: To execute anything in this notebook and the ones following, you need to first save your own copy to Google Drive.*
+<div class="output_text output_subarea output_execute_result">
+<pre>True</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">requires_grad</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x= &quot;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;y= &quot;</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;y.grad_fn= &quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">.</span><span class="n">grad_fn</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>x=  tensor([[1., 1.],
+        [1., 1.]], requires_grad=True)
+y=  tensor([[3., 3.],
+        [3., 3.]], grad_fn=&lt;AddBackward0&gt;)
+y.grad_fn=  &lt;AddBackward0 object at 0x7ef4fa8588&gt;
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Do more ops on y</span>
+<span class="n">z</span> <span class="o">=</span> <span class="n">y</span> <span class="o">*</span> <span class="n">y</span> <span class="o">*</span> <span class="mi">3</span>
+<span class="n">out</span> <span class="o">=</span> <span class="n">z</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">z</span><span class="p">,</span> <span class="n">out</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>tensor([[27., 27.],
+        [27., 27.]], grad_fn=&lt;MulBackward0&gt;) tensor(27., grad_fn=&lt;MeanBackward0&gt;)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">out</span><span class="o">.</span><span class="n">backward</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># print gradients d(out)/dx</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">grad</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>tensor([[4.5000, 4.5000],
+        [4.5000, 4.5000]])
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Generally speaking, torch.autograd is an engine for computing vector-Jacobian product. That is, given any vector v=(v1v2⋯vm)T, compute the product vT⋅J. If v happens to be the gradient of a scalar function l=g(y⃗ ), that is, v=(∂l∂y1⋯∂l∂ym)T, then by the chain rule, the vector-Jacobian product would be the gradient of l with respect to x⃗</p>
+<p>(Note that vT⋅J
+gives a row vector which can be treated as a column vector by taking JT⋅v.)</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Now let’s take a look at an example of vector-Jacobian product:</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">requires_grad</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">y</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="k">while</span> <span class="n">y</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">norm</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mi">1000</span><span class="p">:</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">y</span> <span class="o">*</span> <span class="mi">2</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>tensor([-1456.4800,   971.0087,  -878.5933], grad_fn=&lt;MulBackward0&gt;)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Now in this case y is no longer a scalar. torch.autograd could not</span>
+<span class="c1"># compute the full Jacobian directly, but if we just want the </span>
+<span class="c1"># vector-Jacobian product, </span>
+<span class="c1"># simply pass the vector to backward as argument:</span>
+
+<span class="n">v</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">([</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.0001</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">float</span><span class="p">)</span>
+<span class="n">y</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">grad</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>tensor([4.0960e+02, 4.0960e+03, 4.0960e-01])
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
 
     
     
@@ -203,21 +443,6 @@ toc: false
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>tensor([0.2658], device=&#39;cuda:0&#39;)
-tensor([0.2658], dtype=torch.float64)
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -233,22 +458,6 @@ tensor([0.2658], dtype=torch.float64)
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&#39;0.2.2&#39;</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -289,24 +498,6 @@ tensor([0.2658], dtype=torch.float64)
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>tensor([[3.7566e+21, 0.0000e+00, 0.0000e+00],
-        [0.0000e+00, 0.0000e+00, 0.0000e+00],
-        [2.0122e-15, 1.7796e-43, 0.0000e+00],
-        [0.0000e+00, 1.9498e-15, 1.7796e-43],
-        [0.0000e+00, 0.0000e+00,        nan]])
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -323,24 +514,6 @@ tensor([0.2658], dtype=torch.float64)
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>tensor([[0.9025, 0.3065, 0.9887],
-        [0.5111, 0.5895, 0.1365],
-        [0.1675, 0.3019, 0.9025],
-        [0.0654, 0.4116, 0.7389],
-        [0.5631, 0.2037, 0.1457]])
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -364,24 +537,6 @@ tensor([0.2658], dtype=torch.float64)
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>tensor([[0, 0, 0],
-        [0, 0, 0],
-        [0, 0, 0],
-        [0, 0, 0],
-        [0, 0, 0]])
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -399,20 +554,6 @@ tensor([0.2658], dtype=torch.float64)
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>tensor([5.5000, 3.0000])
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -444,30 +585,6 @@ tensor([0.2658], dtype=torch.float64)
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>tensor([[0., 0., 0.],
-        [0., 0., 0.],
-        [0., 0., 0.],
-        [0., 0., 0.],
-        [0., 0., 0.]], dtype=torch.float64)
-tensor([[ 1.3566, -1.4789, -0.7570],
-        [-1.1449, -0.2322, -1.4030],
-        [-1.1682, -1.4896, -0.4741],
-        [ 1.1031,  1.1265, -1.1917],
-        [-0.1694, -0.3821,  0.1444]])
-torch.Size([5, 3])
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -483,24 +600,6 @@ torch.Size([5, 3])
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>tensor([[ 2.3400, -1.1397, -0.5097],
-        [-0.3986,  0.3333, -0.8365],
-        [-0.9260, -1.3966,  0.1837],
-        [ 1.2826,  2.0173, -0.7995],
-        [ 0.1357,  0.1972,  0.4860]])
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -523,24 +622,6 @@ torch.Size([5, 3])
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>tensor([[ 2.3400, -1.1397, -0.5097],
-        [-0.3986,  0.3333, -0.8365],
-        [-0.9260, -1.3966,  0.1837],
-        [ 1.2826,  2.0173, -0.7995],
-        [ 0.1357,  0.1972,  0.4860]])
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -555,20 +636,6 @@ torch.Size([5, 3])
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>tensor([-1.4789, -0.2322, -1.4896,  1.1265, -0.3821])
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -591,20 +658,6 @@ torch.Size([5, 3])
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>torch.Size([4, 4]) torch.Size([16]) torch.Size([2, 8])
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -636,25 +689,6 @@ torch.Size([5, 3])
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>tensor([-0.7342])
--0.7341695427894592
-a=  tensor([1., 1., 1., 1., 1.])
-y=  tensor([ 0.8264,  0.8474,  0.1451, -0.2517, -0.5211,  0.9682,  0.6880,  0.6404,
-         0.8981, -0.8830,  0.9373, -0.7619, -0.9947, -0.0632, -0.8615, -1.7986])
-b=  [ 1.  1.  1.  1.  1.]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -672,21 +706,6 @@ b=  [ 1.  1.  1.  1.  1.]
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>tensor([5., 5., 5., 5., 5.])
-[ 5.  5.  5.  5.  5.]
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -712,19 +731,23 @@ b=  [ 1.  1.  1.  1.  1.]
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>tensor([2., 2., 2., 2., 2.], dtype=torch.float64)</pre>
 </div>
+    
 
-</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
+<span class="kn">import</span> <span class="nn">torch</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+
+    </div>
 </div>
 </div>
 
@@ -745,20 +768,6 @@ b=  [ 1.  1.  1.  1.  1.]
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>4.9.140-tegra
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -773,30 +782,6 @@ b=  [ 1.  1.  1.  1.  1.]
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Found 1 device(s).
-Device: 0
-  Name: NVIDIA Tegra X1
-  Compute Capability: 5.3
-  Multiprocessors: 1
-  CUDA Cores: 128
-  Concurrent threads: 2048
-  GPU clock: 921.6 MHz
-  Memory clock: 12.75 MHz
-  Total Memory: 3956 MiB
-  Free Memory: 661 MiB
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -817,20 +802,6 @@ Device: 0
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Python 3.6.9
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -848,20 +819,6 @@ Device: 0
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Python 2.7.17
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -876,20 +833,6 @@ Device: 0
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>1.13.3
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -911,20 +854,6 @@ Device: 0
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>3.2.1
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -943,20 +872,6 @@ Device: 0
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>4.3.0
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -972,20 +887,6 @@ Device: 0
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>1.5.0
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -1054,24 +955,6 @@ Device: 0
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>99 1027.5076904296875
-199 10.807744979858398
-299 0.19996334612369537
-399 0.004566734656691551
-499 0.00029197396361269057
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -2016,20 +1899,6 @@ Device: 0
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>GNOME Image Viewer 3.28.1
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -3239,24 +3108,6 @@ models in practice.</p>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>tensor([[0.4775, 0.5280, 0.0413],
-        [0.9544, 0.0316, 0.4031],
-        [0.2048, 0.4548, 0.9797],
-        [0.2774, 0.2466, 0.7644],
-        [0.5840, 0.5863, 0.6405]])
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -3264,7 +3115,7 @@ models in practice.</p>
 
 
 
-  </div><a class="u-url" href="/Machine-Learning/2020/05/13/nvidia-jetson-nano.html" hidden></a>
+  </div><a class="u-url" href="/Machine-Learning/2020/05/20/nvidia-jetson-nano-WK2.html" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">
