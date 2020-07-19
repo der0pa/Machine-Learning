@@ -2,10 +2,10 @@
   
     
         "post0": {
-            "title": "Title",
-            "content": "# How is your day going? &gt; An entery of my deepest thoughts on july, 19, 2020. - toc: true - badges: true - comments: true - categories: [deepthoughts] - image: images/chart-preview.png .",
-            "url": "https://der0pa.github.io/Machine-Learning/Machine-Learning/2020/07/19/How-is-your-day-going.html",
-            "relUrl": "/2020/07/19/How-is-your-day-going.html",
+            "title": "How is your day going?",
+            "content": "",
+            "url": "https://der0pa.github.io/Machine-Learning/Machine-Learning/deepthoughts/2020/07/19/How-is-your-day-going.html",
+            "relUrl": "/deepthoughts/2020/07/19/How-is-your-day-going.html",
             "date": " • Jul 19, 2020"
         }
         
@@ -13,10 +13,10 @@
   
     
         ,"post1": {
-            "title": "Title",
-            "content": "# Tomorrow today &gt; An entry in my future-self. - toc: true - badges: true - comments: true - categories: [BackToTheFuture] - image: images/chart-preview.png .",
-            "url": "https://der0pa.github.io/Machine-Learning/Machine-Learning/2020/07/18/tomorrow.html",
-            "relUrl": "/2020/07/18/tomorrow.html",
+            "title": "Tomorrow today",
+            "content": "",
+            "url": "https://der0pa.github.io/Machine-Learning/Machine-Learning/backtothefuture/2020/07/18/tomorrow.html",
+            "relUrl": "/backtothefuture/2020/07/18/tomorrow.html",
             "date": " • Jul 18, 2020"
         }
         
